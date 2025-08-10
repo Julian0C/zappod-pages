@@ -1,0 +1,93 @@
+## 3) /docs/privacy/index.html (Privacy Policy)
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZapPod • Privacy Policy</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#111}
+    header,footer{padding:24px 20px}
+    header{background:#f6f7f9}
+    main{padding:28px 20px;max-width:920px;margin:auto}
+    h1{font-size:28px;margin:0 0 8px}
+    h2{margin:28px 0 12px;font-size:20px}
+    .muted{color:#6b7280;font-size:14px}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px 18px;margin:14px 0}
+    a{color:#0b5fff;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Last updated: <span id="lastUpdated"></span></p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Who we are</h2>
+      <p>ZapPod is a daily audio briefing app delivering multi‑topic news summaries via audio only. Contact: <a href="mailto:zappod.info@gmail.com">zappod.info@gmail.com</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Data we collect</h2>
+      <ul>
+        <li><strong>Account data</strong>: email address for sign‑in and account management (via Supabase Auth).</li>
+        <li><strong>App diagnostics</strong>: basic crash logs and performance metrics to improve stability.</li>
+        <li><strong>Usage preferences</strong>: basic app settings (e.g., playback preferences) stored locally for your convenience.</li>
+      </ul>
+      <p>We do <strong>not</strong> sell personal data. We do not collect precise location, contacts, photos, or microphone recordings.</p>
+    </section>
+
+    <section class="card">
+      <h2>How we use data</h2>
+      <ul>
+        <li>Provide the service (e.g., deliver daily audio briefings across multiple topics).</li>
+        <li>Secure accounts and prevent abuse.</li>
+        <li>Fix bugs, analyze crashes, and improve performance.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Data sharing</h2>
+      <p>We share data only with service providers necessary to operate ZapPod (e.g., authentication, hosting, analytics). These providers process data on our behalf under contractual safeguards.</p>
+    </section>
+
+    <section class="card">
+      <h2>Retention</h2>
+      <p>We keep personal data only as long as needed to provide the service or comply with legal obligations. You may request deletion of your account data at any time.</p>
+    </section>
+
+    <section class="card">
+      <h2>Your choices</h2>
+      <ul>
+        <li>Access, update, or delete your account by contacting us at <a href="mailto:zappod.info@gmail.com">zappod.info@gmail.com</a>.</li>
+        <li>Opt out of non‑essential emails by using unsubscribe links.</li>
+        <li>Disable analytics/diagnostics in app settings (if available), or contact us.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Children</h2>
+      <p>ZapPod is not directed to children under 13 (or the minimum age required in your country). We do not knowingly collect data from children.</p>
+    </section>
+
+    <section class="card">
+      <h2>International transfers</h2>
+      <p>Your data may be processed in countries other than your own. We use safeguards where required by law.</p>
+    </section>
+
+    <section class="card">
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy from time to time. We will post the updated date at the top of this page.</p>
+    </section>
+  </main>
+  <footer class="muted">© <span id="year"></span> ZapPod</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('lastUpdated').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
+```
